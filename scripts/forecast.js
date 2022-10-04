@@ -13,7 +13,7 @@ const getWeather= async (id) => { //id della città
 
 //get city information
 const getCity = async (city) => {
-   const base = 'http://dataservice.accuweather.com/locations/v1/cities/search'; //url dell' api endpoint per la città
+   const base = 'https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/locations/v1/cities/search'; //url dell' api endpoint per la città
    const query = `?apikey=${key}&q=${city}`;
    
    const response = await fetch(base + query); //prende base e query e li passa come un solo parametro 
